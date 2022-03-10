@@ -6,7 +6,6 @@
         "php": "~7.3.0||~7.4.0"
     },
     "type": "magento2-module",
-    "version": "dev-master",
     "homepage": "https://github.com/narendravyas24/DynamicApiField",
     "authors": [
         {
@@ -23,7 +22,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Magento\\ExternalLinks\\": ""
+            "Adobe\\DynamicApiField\\": ""
         }
     }
 }
