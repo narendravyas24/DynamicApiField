@@ -1,13 +1,22 @@
 {
-    "name": "Adobe/DynamicApiField",
-    "description": "N/A",
+    "name": "adobe/dynamicapifield",
+    "description": "A demo module demos how to add dynamic fields in product REST API response using extension attributes.",
+    "version": "1.6.0",
     "require": {
         "php": "~5.6.0|7.0.2|~7.0.6"
     },
     "type": "magento2-module",
     "version": "dev-master",
+    "homepage": "https://github.com/narendravyas24/DynamicApiField",
+    "authors": [
+        {
+            "name": "Narendra Vyas",
+            "email": "nrenvyas@gmail.com"
+        }
+    ],
     "license": [
-        "proprietary"
+        "OSL-3.0",
+        "AFL-3.0"
     ],
     "autoload": {
         "files": [
