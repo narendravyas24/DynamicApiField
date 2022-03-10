@@ -4,14 +4,14 @@
  * See COPYING.txt for license details.
  */
 
-namespace Adobe\DynamicApiField\Tests\Unit\Plugin;
+namespace Narendra\DynamicApiField\Tests\Unit\Plugin;
 
 use Magento\Catalog\Api\Data\ProductExtensionFactory;
 use Magento\Catalog\Api\Data\ProductExtensionInterface;
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Catalog\Api\ProductRepositoryInterface;
 use PHPUnit\Framework\TestCase;
-use Adobe\DynamicApiField\Plugin\ProductAttributesLoad;
+use Narendra\DynamicApiField\Plugin\ProductAttributesLoad;
 
 class ProductAttributesLoadTest extends TestCase
 {

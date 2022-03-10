@@ -4,7 +4,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace Adobe\DynamicApiField\Plugin;
+namespace Narendra\DynamicApiField\Plugin;
 
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Catalog\Api\ProductRepositoryInterface;
@@ -12,19 +12,19 @@ use Magento\Catalog\Api\Data\ProductSearchResultsInterface;
 
 /**
  * Class ProductAttributesLoad
- * @package Adobe\DynamicApiField\Plugin
+ * @package Narendra\DynamicApiField\Plugin
  */
 class ProductAttributesLoad
 {
     /**
      * Value of custom_attribute1 extension attribute
      */
-    public const VALUE_CUSTOM_ATTRIBUTE_1 = 'Static value for custom attribute 1';
+    public const VALUE_CUSTOM_ATTRIBUTE_1 = 'Value for custom attribute 1';
 
     /**
      * Value of custom_attribute2 extension attribute
      */
-    public const VALUE_CUSTOM_ATTRIBUTE_2 = 'Static value for custom attribute 2';
+    public const VALUE_CUSTOM_ATTRIBUTE_2 = 'Value for custom attribute 2';
 
     /**
      * @param \Magento\Catalog\Api\ProductRepositoryInterface $subject

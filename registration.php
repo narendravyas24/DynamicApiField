@@ -6,4 +6,4 @@
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Adobe_DynamicApiField', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Narendra_DynamicApiField', __DIR__);

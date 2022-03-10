@@ -9,6 +9,6 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Catalog\Api\ProductRepositoryInterface">
         <plugin name="ProductExtensionAttributeOperation"
-                type="Adobe\DynamicApiField\Plugin\ProductAttributesLoad"/>
+                type="Narendra\DynamicApiField\Plugin\ProductAttributesLoad"/>
     </type>
 </config>
