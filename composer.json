@@ -1,5 +1,5 @@
 {
-    "name": "adobe/dynamicapifield",
+    "name": "narendravyas24/dynamicapifield",
     "description": "A demo module demos how to add dynamic fields in product REST API response using extension attributes.",
     "version": "1.6.0",
     "require": {
