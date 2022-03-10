@@ -1,7 +1,6 @@
 {
     "name": "narendravyas24/dynamicapifield",
     "description": "A demo module demos how to add dynamic fields in product REST API response using extension attributes.",
-    "version": "1.6.0",
     "require": {
         "php": "~7.3.0||~7.4.0"
     },
