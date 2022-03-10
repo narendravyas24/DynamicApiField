@@ -16,6 +16,16 @@ use Narendra\DynamicApiField\Plugin\ProductAttributesLoad;
 class ProductAttributesLoadTest extends TestCase
 {
     /**
+     * Value of custom_attribute1 extension attribute
+     */
+    public const VALUE_CUSTOM_ATTRIBUTE_1 = 'Value for custom attribute 1.';
+
+    /**
+     * Value of custom_attribute2 extension attribute
+     */
+    public const VALUE_CUSTOM_ATTRIBUTE_2 = 'Value for custom attribute 2.';
+
+    /**
      * @var ProductAttributesLoad
      */
     private ProductAttributesLoad $repository;
@@ -43,8 +53,6 @@ class ProductAttributesLoadTest extends TestCase
 
         $this->product = $this->createMock(ProductInterface::class);
         $this->productExtensionAttributes = $this->createMock(ProductExtensionInterface::class);
-
-
         $this->subject = $this->createMock(ProductRepositoryInterface::class);
 
         $this->repository = new ProductAttributesLoad(
@@ -59,10 +67,10 @@ class ProductAttributesLoadTest extends TestCase
             ->willReturn($this->productExtensionAttributes);
         $this->productExtensionAttributes->expects($this->exactly(1))
             ->method("setCustomAttribute1")
-            ->with('Static value for custom attribute 1');
+            ->with(self::VALUE_CUSTOM_ATTRIBUTE_1);
         $this->productExtensionAttributes->expects($this->exactly(1))
             ->method("setCustomAttribute2")
-            ->with('Static value for custom attribute 2');
+            ->with(self::VALUE_CUSTOM_ATTRIBUTE_2);
         $this->repository->afterGet($this->subject, $this->product);
     }
 
@@ -79,10 +87,10 @@ class ProductAttributesLoadTest extends TestCase
             ->willReturn($this->productExtensionAttributes);
         $this->productExtensionAttributes->expects($this->exactly(1))
             ->method("setCustomAttribute1")
-            ->with('Static value for custom attribute 1');
+            ->with(self::VALUE_CUSTOM_ATTRIBUTE_1);
         $this->productExtensionAttributes->expects($this->exactly(1))
             ->method("setCustomAttribute2")
-            ->with('Static value for custom attribute 2');
+            ->with(self::VALUE_CUSTOM_ATTRIBUTE_2);
         $this->product->expects($this->once())
             ->method("setExtensionAttributes")
             ->with($this->productExtensionAttributes);
@@ -90,4 +98,3 @@ class ProductAttributesLoadTest extends TestCase
         $this->repository->afterGetList($this->subject, $searchResult);
     }
 }
-
